@@ -18,7 +18,7 @@ class App extends React.Component {
       <div>
         <div>
           <NavLink exact to="/" activeStyle={activeStyle}>
-            HomePage
+            Home
           </NavLink>
           {" | "}
           <NavLink to="/fuel-savings" activeStyle={activeStyle}>
