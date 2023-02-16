@@ -22,11 +22,11 @@ class App extends React.Component {
           </NavLink>
           {" | "}
           <NavLink to="/fuel-savings" activeStyle={activeStyle}>
-            Demo App
+            Demo
           </NavLink>
           {" | "}
           <NavLink to="/about" activeStyle={activeStyle}>
-            About
+            About us
           </NavLink>
         </div>
         <Switch>

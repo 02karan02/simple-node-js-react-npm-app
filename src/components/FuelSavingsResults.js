@@ -17,8 +17,8 @@ const FuelSavingsResults = ({ savings }) => {
               <tbody>
                 <tr>
                   <td>Monthly</td>
-                  <td>1 Year</td>
-                  <td>3 Year</td>
+                  <td>1-Year</td>
+                  <td>3-Year</td>
                 </tr>
                 <tr>
                   <td className={savingsClass}>{savings.monthly}</td>
