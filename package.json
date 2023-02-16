@@ -1,53 +1,77 @@
 {
-  "name": "testing",
+  "name": "sample-test-case-application",
   "version": "0.1.0",
   "private": true,
-  "scripts": {
-    "start": "npm-run-all start-dev start-mockapi",
-    "start-dev": "react-scripts start",
-    "prestart-mockapi": "node buildScripts/generateMockData",
-    "start-mockapi": "json-server --watch src/api/db.json --port 3001 --static node_modules/json-server/lib/server/public",
-    "build-js": "react-scripts build",
-    "build": "npm-run-all build-css build-js",
-    "test": "react-scripts test --env=jsdom",
-    "coverage": "react-scripts test --env=jsdom --coverage ",
-    "open:coverage": "npm run coverage && opn ./coverage/lcov-report/index.html",
-    "cypress": "cypress open",
-    "eject": "react-scripts eject"
-  },
   "dependencies": {
-    "axios": "^0.18.0",
-    "babel-cli": "^6.26.0",
-    "react": "^16.8.2",
-    "react-dom": "^16.8.2",
-    "react-redux": "^6.0.1",
-    "react-router-dom": "^4.3.1",
-    "react-router-redux": "^4.0.8",
-    "react-scripts": "2.1.5",
-    "redux": "^4.0.1",
-    "redux-thunk": "^2.3.0",
-    "sass": "^1.58.1"
+    "@syncfusion/ej2-inputs": "18.1.56",
+    "@syncfusion/ej2-react-buttons": "18.1.56",
+    "@syncfusion/ej2-react-calendars": "18.1.57",
+    "@syncfusion/ej2-react-dropdowns": "18.1.56",
+    "@syncfusion/ej2-react-grids": "18.1.56",
+    "@syncfusion/ej2-react-inputs": "18.1.56",
+    "@syncfusion/ej2-react-navigations": "18.1.55",
+    "@syncfusion/ej2-react-popups": "18.1.56",
+    "@syncfusion/ej2-react-progressbar": "18.2.45",
+    "@syncfusion/ej2-react-splitbuttons": "18.1.52",
+    "@testing-library/jest-dom": "^5.11.5",
+    "@testing-library/react": "^11.1.2",
+    "@testing-library/user-event": "^12.2.2",
+    "@types/enzyme": "^3.10.7",
+    "@types/jest": "24.0.25",
+    "@types/node": "12.7.12",
+    "@types/react": "16.9.5",
+    "@types/react-dom": "16.9.1",
+    "@types/react-router-dom": "^5.1.6",
+    "axios": "0.19.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.5",
+    "formik": "2.0.5",
+    "jwt-decode": "2.2.0",
+    "node-sass": "4.12.0",
+    "react": "16.10.2",
+    "react-app-polyfill": "1.0.4",
+    "react-dom": "16.10.2",
+    "react-intl": "3.4.0",
+    "react-router-dom": "5.1.2",
+    "react-scripts": "3.2.0",
+    "react-step-progress-bar": "1.0.3",
+    "react-tabs": "3.1.0",
+    "toastr": "2.1.4",
+    "typescript": "^4.1.2",
+    "web-vitals": "^0.2.4",
+    "yup": "0.27.0"
   },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "server": "json-server --watch server/db.json"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "ie 11",
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "crcf": [
+    "typescript",
+    "css",
+    "proptypes",
+    "spec"
+  ],
   "devDependencies": {
-    "axios-mock-adapter": "^1.16.0",
-    "babel-core": "^7.0.0-bridge.0",
-    "cypress": "^3.1.5",
-    "enzyme": "^3.9.0",
-    "enzyme-adapter-react-16": "^1.9.1",
-    "json-schema-faker": "0.3.6",
-    "json-server": "^0.12.1",
-    "mockdate": "^2.0.2",
-    "npm-run-all": "^4.1.5",
-    "opn-cli": "^4.0.0",
-    "react-test-renderer": "^16.8.2",
-    "react-testing-library": "^5.9.0",
-    "redux-immutable-state-invariant": "^2.1.0",
-    "redux-mock-store": "^1.5.3"
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+    "@types/enzyme-adapter-react-16": "^1.0.6",
+    "create-react-component-folder": "^0.3.0"
+  }
 }
